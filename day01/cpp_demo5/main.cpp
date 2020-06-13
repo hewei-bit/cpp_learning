@@ -1,54 +1,53 @@
 #include <iostream>
 
 using namespace std;
-
-#define PI 3.14
-
-inline double area(double radius)
+/*
+1.函数名必须相同 --- 前提条件
+2.参数的类型不同 || 参数个数不同 || 参数顺序不同，均可构成重载
+3.返回值类型不同则不可以做为函数重载依据
+*/
+int add(int a,int b)
 {
-    return PI*radius*radius;
+    cout << "int add(int a,int b)"<<endl;
+    return (a+b);
 }
-
-double calc(double radius,double height = 1.0)
+#if 0
+//返回值类型不同不能构成函数重载的依据
+char add(int a,int b)
 {
-//    double result;
-    return area(radius)*height/3;
+    return (a+b);
 }
+#endif
+//参数的类型不同
 
-int calc(int radius,int height = 1)
+int add(char a,int b)
 {
-    int result = ((int)area(radius)*height/3);
-    return result;
+    cout << "int add(char a,int b)"<<endl;
+    return (a+b);
 }
+//参数个数不同
+int add(int a,int b,int* result)
+{
 
+    cout << "int add(int a,int b,int* result)"<<endl;
+    return 0;
+}
+//参数顺序不同
+int add(int* result,int a,int b)
+{
 
+    cout << "int add(int* result,int a,int b)"<<endl;
+    return 0;
+}
 int main()
 {
-    int radius_i;
-    int height_i;
-    int result_i;
-    double radius_d;
-    double height_d;
-    double result_d;
 
-    cout <<"please input radius and height by int"<<endl;
-//    cin >> radius_i >> height_i;
-//    cout << radius_i << height_i;
+    int a =5;
+    int b = 3;
+    char c = 'c';
+    char d = 'd';
 
-
-    result_i = calc(1,2);
-    cout << "result = "<<result_i<<endl;
-
-    cout <<"please input radius and height by double"<<endl;
-//    cin >> radius_d >> height_d;
-//    cout << radius_d << height_d;
-
-    result_d = calc(22.1,34.1);
-    cout << "result = "<<result_d<<endl;
-    result_d = calc(22);
-    cout << "result = "<<result_d<<endl;
-
-
-    cout << "Hello World!" << endl;
+   add(c,a);
+   add(c,d);
     return 0;
 }
