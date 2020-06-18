@@ -51,8 +51,10 @@ int main()
 
     A a1(1);
     A a2(2);
-    A a3 = a1+a2;
-    A a4 = a3*a2;
+//    A a3 = a1+a2;
+    A a3 = a1.operator+(a2);
+//    A a4 = a3*a2;
+    A a4 = a3.operator*(a2);
     A a5 = a4 - a3;
     A a6 = a5/a2;
     cout << a3.getA()<<endl;
