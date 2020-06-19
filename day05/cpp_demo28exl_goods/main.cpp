@@ -37,7 +37,7 @@ private:
     Goods* next;
 };
 
- int Goods::total_weight = 0;
+int Goods::total_weight = 0;
 
  //货物本身是没有销售和进货功能，可以使用全局函数来测试，或者设计一个类
 void buy(Goods* head,int w)
