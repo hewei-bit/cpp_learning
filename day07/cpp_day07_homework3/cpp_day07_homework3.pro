@@ -4,4 +4,9 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        romote.cpp \
+        tv.cpp
+
+HEADERS += \
+    tv_remote.h

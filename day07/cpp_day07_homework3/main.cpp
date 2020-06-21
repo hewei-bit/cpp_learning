@@ -1,4 +1,7 @@
 #include <iostream>
+#include "tv_remote.h"
+
+
 
 using namespace std;
 
@@ -14,5 +17,18 @@ using namespace std;
 int main()
 {
     cout << "Hello World!" << endl;
+
+    Romote rr;
+    rr.TVVolumeUP();
+    rr.TVVolumeDOWN();
+    rr.TVchannelUP();
+    rr.TVchannelDOWN();
+    rr.TVPower();
+    rr.TVPower();
+    rr.TVPower();
+
+
+
+
     return 0;
 }
