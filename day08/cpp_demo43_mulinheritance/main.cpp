@@ -77,7 +77,7 @@ public:
 
     SafaBed()
     {
-            cout << "SafaBed:: SafaBed()" << endl;
+        cout << "SafaBed:: SafaBed()" << endl;
         this->material = 10;
     }
     void printSB()
