@@ -89,6 +89,10 @@ public:
     {
         vv.move();
     }
+    void Drive(Vehicle *vv)
+    {
+        vv->move();
+    }
 };
 
 
@@ -98,8 +102,13 @@ int main()
     Amphibious a(3333);
     Car c(1111);
     Boat b(2222);
-    a.move();
-    c.move();
-    b.move();
+//    a.move();
+//    c.move();
+//    b.move();
+    Driver dd;
+    dd.Drive(a);
+    dd.Drive(b);
+    dd.Drive(c);
+
     return 0;
 }
