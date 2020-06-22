@@ -4,4 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        super_market.cpp
+
+HEADERS += \
+    super_market.h

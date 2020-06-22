@@ -3,8 +3,21 @@
 using namespace std;
 
 
-int main()
+class Base
 {
-    cout << "Hello World!" << endl;
-    return 0;
+public:
+     Base(){cout <<  "B" << endl;}
+    ~Base(){cout << "~B" << endl;}
+};
+
+class Derived : public Base
+{
+public:
+    Derived() {cout <<  "D" << endl;}
+    ~Derived(){cout << "~D" << endl;}
+};
+
+int main(void)
+{
+    Derived d;
 }

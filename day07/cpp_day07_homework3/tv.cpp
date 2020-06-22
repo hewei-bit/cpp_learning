@@ -6,7 +6,7 @@ int TV::channel = 20;
 
 TV::TV()
 {
-    cout << " ~TV() "<<endl;
+    cout << " TV() "<<endl;
 }
 
 TV::~TV()

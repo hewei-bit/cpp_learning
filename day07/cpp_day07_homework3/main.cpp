@@ -23,6 +23,7 @@ int main()
     rr.TVVolumeDOWN();
     rr.TVchannelUP();
     rr.TVchannelDOWN();
+    rr.TVchannelset(22);
     rr.TVPower();
     rr.TVPower();
     rr.TVPower();
