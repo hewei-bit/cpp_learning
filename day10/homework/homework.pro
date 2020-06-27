@@ -4,4 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        myarray.cpp \
+        person.cpp
+
+HEADERS += \
+    myarray.h \
+    person.h

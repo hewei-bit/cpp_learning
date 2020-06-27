@@ -12,10 +12,7 @@ public:
     {
             cout << "the object is created"<<endl;
             return instance;
-
     }
-
-
 private:
     SingleTon() //手动实现无参的构造函数，将它设置为private
     {
