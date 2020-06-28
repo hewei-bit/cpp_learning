@@ -8,8 +8,6 @@ void printIntArray(MyArray<int> & arr);
 
 void printPersonArry(MyArray<Person> & arry);
 
-//template <class T>
-//extern ostream & operator<<(ostream &os, const MyArray<T> &arr);
 
 int main()
 {
@@ -20,7 +18,7 @@ int main()
     }
     printIntArray(arr);
 
-//    cout << arr <<endl;
+    cout << arr ;
     Person p1("hewei",123);
     Person p2("hewei",123);
     Person p3("hewei",123);
@@ -44,6 +42,6 @@ void printIntArray(MyArray<int> & arr)
 void printPersonArry(MyArray<Person> & arry)
 {
     for (int i = 0; i < arry.getSize(); i++) {
-        cout << "ÐÕÃû£º"<<arry[i].m_Name<<" ÄêÁä£º"<<arry[i].m_Age << endl;
+        cout << "name£º" <<arry[i].m_Name<< " age£º" <<arry[i].m_Age << endl;
     }
 }

@@ -11,7 +11,7 @@ template <class T>
 class MyArray
 {
     //重载 << 操作符
-    friend ostream & operator<<(ostream &os, const MyArray<T> &arr);
+
 public:
     MyArray(){}
     explicit MyArray(int capacity)//防止隐式转换,构造函数
@@ -73,13 +73,13 @@ public:
     //获取大小
     int getSize()
     {
-        return this->m_Size;
+        return m_Size;
     }
 
     //获取容量
     int getCapacity()
     {
-        return this->m_Capacity;
+        return m_Capacity;
     }
 
 
@@ -90,9 +90,9 @@ private:
 };
 
 template <class T>
-ostream & operator<<(ostream &os, const MyArray<T> &arr)
+ostream & operator<<(ostream &os, MyArray<T> &arr)
 {
-    os<<"size : "<<arr.m_Size<<"capacity"<<arr.m_Capacity<<endl;
+    os<<"size : "<<arr.getSize() <<"capacity"<<arr.getSize() <<endl;
     return os;
 }
 #endif // MYARRAY_H
